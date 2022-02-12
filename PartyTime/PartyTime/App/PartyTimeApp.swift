@@ -11,13 +11,15 @@ import SwiftUI
 struct PartyTimeApp: App {
     var body: some Scene {
         WindowGroup {
-            TabView {
-                MapView()
-                    .tabItem {
-                        Image(systemName: "mappin")
-                        Text("Map")
-                    }
-            }
+//            TabView {
+//                MapView()
+//                    .tabItem {
+//                        Image(systemName: "mappin")
+//                        Text("Map")
+//                    }
+//            }
+            
+            MapView()
         }
     }
 }

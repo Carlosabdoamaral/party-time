@@ -9,7 +9,6 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    
     @State private var region = MKCoordinateRegion(
             center: CLLocationCoordinate2D(
                 latitude: -27.591534698843418,
@@ -18,7 +17,7 @@ struct MapView: View {
                 latitudeDelta: 0.5,
                 longitudeDelta: 0.5)
         )
-    
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -27,9 +26,85 @@ struct MapView: View {
                     userTrackingMode: .constant(.follow)
                 )
                     .edgesIgnoringSafeArea([.top, .horizontal])
+                
+                VStack(alignment: .leading) {
+                    
+                    Spacer()
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(0..<10) { place in
+                                SinglePlace()
+                            }
+                        }
+                    }
+                }
+                .padding([.top, .bottom])
             }
-            .navigationTitle("Map")
+            .navigationTitle("PartyMap")
         }
+    }
+}
+
+struct SinglePlace : View {
+    
+    var body: some View {
+        ZStack {
+            VStack(alignment: .center) {
+                
+                HStack {
+                    Text("25 km")
+                    Text("|")
+                    Text("Rua professor bento águido vieira, 197")
+                }
+                .font(.footnote)
+                .lineLimit(1)
+                .foregroundColor(.accentColor)
+                .padding(.top, 10)
+                .padding(.bottom, 1)
+                .padding(.horizontal)
+                
+                Divider()
+                
+                VStack(alignment: .center) {
+                    Text("Título da festa show de bola")
+                        .foregroundColor(.black)
+                        .font(.title3)
+                        .fontWeight(.heavy)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
+                        .lineLimit(2)
+                    
+                    HStack {
+                        Text("03/06")
+                        Text("|")
+                        Text("19 hrs")
+                    }
+                    .font(.footnote)
+                    .foregroundColor(.gray)
+                    .lineLimit(1)
+                }
+                .padding(.vertical, 30)
+                
+                Button {
+                    
+                } label: {
+                    Text("I want to go!")
+                        .foregroundColor(.white)
+                        .font(.callout)
+                }
+                .padding(5)
+                .padding(.horizontal, 50)
+                .background(.indigo)
+                .cornerRadius(5)
+                
+                
+                Spacer()
+            }
+        }
+        .frame(width: 220 ,height: 220)
+        .background(.white)
+        .cornerRadius(15)
+        .padding(5)
     }
 }
 
