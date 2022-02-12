@@ -12,6 +12,13 @@
 		98780AAE27B7500100FF05CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98780AAD27B7500100FF05CF /* Preview Assets.xcassets */; };
 		98780AB827B7506B00FF05CF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98780AB727B7506B00FF05CF /* MapView.swift */; };
 		98780ABA27B7624600FF05CF /* PartyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98780AB927B7624600FF05CF /* PartyDetailsView.swift */; };
+		988B28D227B7FF2C008FD5F3 /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B28D127B7FF2C008FD5F3 /* UIScreenExtension.swift */; };
+		988B28D427B80330008FD5F3 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B28D327B80330008FD5F3 /* UserProfileView.swift */; };
+		988B28D727B8087E008FD5F3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B28D627B8087E008FD5F3 /* UserModel.swift */; };
+		988B28DB27B80C4F008FD5F3 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 988B28D927B80C4F008FD5F3 /* UserData.xcdatamodeld */; };
+		988B28DD27B8417D008FD5F3 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B28DC27B8417D008FD5F3 /* AuthView.swift */; };
+		988B28DF27B84CBC008FD5F3 /* ImagesAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988B28DE27B84CBC008FD5F3 /* ImagesAssets.xcassets */; };
+		988B28E227B864F8008FD5F3 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B28E127B864F8008FD5F3 /* UserController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +28,13 @@
 		98780AAD27B7500100FF05CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		98780AB727B7506B00FF05CF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		98780AB927B7624600FF05CF /* PartyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyDetailsView.swift; sourceTree = "<group>"; };
+		988B28D127B7FF2C008FD5F3 /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
+		988B28D327B80330008FD5F3 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		988B28D627B8087E008FD5F3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		988B28DA27B80C4F008FD5F3 /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
+		988B28DC27B8417D008FD5F3 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		988B28DE27B84CBC008FD5F3 /* ImagesAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImagesAssets.xcassets; sourceTree = "<group>"; };
+		988B28E127B864F8008FD5F3 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,10 @@
 		98780AA527B7500000FF05CF /* PartyTime */ = {
 			isa = PBXGroup;
 			children = (
+				988B28E027B864EB008FD5F3 /* Controller */,
+				988B28D827B80C3C008FD5F3 /* Data */,
+				988B28D527B80872008FD5F3 /* Model */,
+				988B28D027B7FF1C008FD5F3 /* Extension */,
 				98780AB427B7503F00FF05CF /* App */,
 				98780AB527B7504600FF05CF /* Views */,
 				98780AB627B7505100FF05CF /* Assets */,
@@ -82,6 +100,8 @@
 			children = (
 				98780AB727B7506B00FF05CF /* MapView.swift */,
 				98780AB927B7624600FF05CF /* PartyDetailsView.swift */,
+				988B28D327B80330008FD5F3 /* UserProfileView.swift */,
+				988B28DC27B8417D008FD5F3 /* AuthView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -90,8 +110,41 @@
 			isa = PBXGroup;
 			children = (
 				98780AAA27B7500100FF05CF /* Assets.xcassets */,
+				988B28DE27B84CBC008FD5F3 /* ImagesAssets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		988B28D027B7FF1C008FD5F3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				988B28D127B7FF2C008FD5F3 /* UIScreenExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		988B28D527B80872008FD5F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				988B28D627B8087E008FD5F3 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		988B28D827B80C3C008FD5F3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				988B28D927B80C4F008FD5F3 /* UserData.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		988B28E027B864EB008FD5F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				988B28E127B864F8008FD5F3 /* UserController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988B28DF27B84CBC008FD5F3 /* ImagesAssets.xcassets in Resources */,
 				98780AAE27B7500100FF05CF /* Preview Assets.xcassets in Resources */,
 				98780AAB27B7500100FF05CF /* Assets.xcassets in Resources */,
 			);
@@ -164,9 +218,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988B28E227B864F8008FD5F3 /* UserController.swift in Sources */,
+				988B28D427B80330008FD5F3 /* UserProfileView.swift in Sources */,
 				98780AB827B7506B00FF05CF /* MapView.swift in Sources */,
+				988B28D227B7FF2C008FD5F3 /* UIScreenExtension.swift in Sources */,
 				98780ABA27B7624600FF05CF /* PartyDetailsView.swift in Sources */,
+				988B28D727B8087E008FD5F3 /* UserModel.swift in Sources */,
 				98780AA727B7500000FF05CF /* PartyTimeApp.swift in Sources */,
+				988B28DD27B8417D008FD5F3 /* AuthView.swift in Sources */,
+				988B28DB27B80C4F008FD5F3 /* UserData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,8 +363,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,8 +394,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,6 +433,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		988B28D927B80C4F008FD5F3 /* UserData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				988B28DA27B80C4F008FD5F3 /* UserData.xcdatamodel */,
+			);
+			currentVersion = 988B28DA27B80C4F008FD5F3 /* UserData.xcdatamodel */;
+			path = UserData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 98780A9B27B7500000FF05CF /* Project object */;
 }

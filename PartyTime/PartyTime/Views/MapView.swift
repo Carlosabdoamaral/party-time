@@ -14,8 +14,8 @@ struct MapView: View {
                 latitude: -27.591534698843418,
                 longitude: -48.52503916008313),
             span: MKCoordinateSpan(
-                latitudeDelta: 0.5,
-                longitudeDelta: 0.5)
+                latitudeDelta: 0,
+                longitudeDelta: 0.1)
         )
 
     var body: some View {
@@ -46,6 +46,7 @@ struct MapView: View {
 }
 
 struct SinglePlace : View {
+    @State private var isShowingDetails : Bool = false
     
     var body: some View {
         ZStack {
@@ -86,9 +87,9 @@ struct SinglePlace : View {
                 .padding(.vertical, 30)
                 
                 Button {
-                    
+                    isShowingDetails.toggle()
                 } label: {
-                    Text("I want to go!")
+                    Text("Quero ir!")
                         .foregroundColor(.white)
                         .font(.callout)
                 }
@@ -105,6 +106,9 @@ struct SinglePlace : View {
         .background(.white)
         .cornerRadius(15)
         .padding(5)
+        .sheet(isPresented: $isShowingDetails) {
+            PartyDetailsView()
+        }
     }
 }
 
