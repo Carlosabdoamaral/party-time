@@ -19,6 +19,8 @@
 		988B28DD27B8417D008FD5F3 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B28DC27B8417D008FD5F3 /* AuthView.swift */; };
 		988B28DF27B84CBC008FD5F3 /* ImagesAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988B28DE27B84CBC008FD5F3 /* ImagesAssets.xcassets */; };
 		988B28E227B864F8008FD5F3 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988B28E127B864F8008FD5F3 /* UserController.swift */; };
+		C0E2EDCD280928650041E9CD /* PartyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2EDCC280928650041E9CD /* PartyData.swift */; };
+		C0E2EDCF280928760041E9CD /* PartyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E2EDCE280928760041E9CD /* PartyModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		988B28DC27B8417D008FD5F3 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		988B28DE27B84CBC008FD5F3 /* ImagesAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImagesAssets.xcassets; sourceTree = "<group>"; };
 		988B28E127B864F8008FD5F3 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		C0E2EDCC280928650041E9CD /* PartyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyData.swift; sourceTree = "<group>"; };
+		C0E2EDCE280928760041E9CD /* PartyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				988B28D627B8087E008FD5F3 /* UserModel.swift */,
+				C0E2EDCE280928760041E9CD /* PartyModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				988B28D927B80C4F008FD5F3 /* UserData.xcdatamodeld */,
+				C0E2EDCC280928650041E9CD /* PartyData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -218,9 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0E2EDCD280928650041E9CD /* PartyData.swift in Sources */,
 				988B28E227B864F8008FD5F3 /* UserController.swift in Sources */,
 				988B28D427B80330008FD5F3 /* UserProfileView.swift in Sources */,
 				98780AB827B7506B00FF05CF /* MapView.swift in Sources */,
+				C0E2EDCF280928760041E9CD /* PartyModel.swift in Sources */,
 				988B28D227B7FF2C008FD5F3 /* UIScreenExtension.swift in Sources */,
 				98780ABA27B7624600FF05CF /* PartyDetailsView.swift in Sources */,
 				988B28D727B8087E008FD5F3 /* UserModel.swift in Sources */,
